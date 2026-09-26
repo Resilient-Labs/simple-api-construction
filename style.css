@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #333 url("HVAC.jpg") center / cover fixed;
+}
+
+/* white box so the text is readable over the photo */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.93);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#search-input,
+#permit-type-select {
+  flex: 1;
+}
+
+.permit {
+  border-top: 1px solid #999;
+  padding: 10px 0;
+}
+
+.permit p {
+  margin: 4px 0;
+}
+
+.error {
+  color: #b00020;
+}

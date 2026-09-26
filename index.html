@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Permit Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Construction Permit Search</h1>
+    <p>Search Philadelphia construction permit records.</p>
+
+    <!-- form so hitting Enter also searches -->
+    <form id="search-form">
+      <select id="search-type">
+        <option value="address">Address</option>
+        <option value="permitnumber">Permit number</option>
+        <option value="permittype">Permit type</option>
+      </select>
+
+      <input type="text" id="search-input" placeholder="e.g. 1900 MARKET ST">
+
+      <!-- only shown for permit type, these are the names used on permits since 2024 -->
+      <select id="permit-type-select" hidden>
+        <option value="Building">Building</option>
+        <option value="Demolition">Demolition</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Fire Suppression">Fire Suppression</option>
+        <option value="General Permit Minor">General Permit Minor</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Plumbing">Plumbing</option>
+        <option value="Residential Building">Residential Building</option>
+        <option value="Site / Utility Permit">Site / Utility Permit</option>
+        <option value="Zoning">Zoning</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+
+    <h2>Results</h2>
+    <p id="message"></p>
+    <div id="results"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
