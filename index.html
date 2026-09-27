@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />	
+		<title>Philly Construction</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h3>Philly Trade Activity Finder</h3>
+			</nav>
+		</header>
+		<main>
+			<section class="container">
+				<h1>Find Local Trade Activity</h1>
+				<p>Select a ZIP code and work category to review relevant public permit activity in your service area.</p>
+			</section>
+			<section class="container-box">
+				<label> ZIP CODE
+					<input type="string" placeholder="Zip Code" value=""  id="zip-code">
+				</label>
+				<label for="permited-type"> WORK ACTIVITY
+					<select id="permited-type" type="selector" value="" >
+						<option value="" disabled selected>Select a permit type</option>
+						<option value="Plumbing">Plumbing</option>
+						<option value="Electrical">Electrical</option>
+						<option value="Residential Building">Residential Building</option>
+						<option value="General Permit Minor">General Permit Minor</option>
+						<option value="Building">Building</option>
+						<option value="Zoning">Zoning</option>
+						<option value="Mechanical">Mechanical</option>
+						<option value="General">General</option>
+					</select>
+				</label>
+					<button type="button" name="button" id="search">SEARCH PERMITS</button>
+			</section>
+			<section class="container-list">
+				
+			<section>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
