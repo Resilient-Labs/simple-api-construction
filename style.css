@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  background:url(industrial2.avif) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+
+}
+select{
+  margin-left: 47%;
+}
+h1{
+display:flex;
+justify-content: center;
+}
+
+.firstCon {
+  border-bottom:1px solid black;
+  height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+  
+  
+}
+.secondCon{
+  border-bottom:1px solid black;
+   height: 100px;
+    margin-left: 45%;
+  font-size: larger;
+
+
+}
+.thirdCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.fourthCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.fifthCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.sixthCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.seventhCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.eighthCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.ninthCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+.tenthCon{
+    border-bottom:1px solid black;
+   height: 100px;
+  margin-left: 45%;
+  font-size: larger;
+
+}
+
+@media (max-width:780px){
+  body{
+    padding:10px;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  input{
+    width:90%
+  }
+}
