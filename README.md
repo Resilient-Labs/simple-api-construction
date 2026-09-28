@@ -1,22 +1,26 @@
-# 🏗️ Project: Simple API 1 - Construction
+# Construction App
+Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
 
-### How to submit your code for review:
+## View
+<p align="center">
+  <img src="images/landing.png" alt="construction" width="48%" height="400">
+  <img src="images/load.png" alt="nice" width="48%" height="400">
+</p>
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Built With
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## Local Preview
+
+Open `index.html` using the VS Code Live Server extension or open the file directly in your browser.
+
+## Limits
+
+This is only limited to the 5 boroughs of NYC. Queens, Brooklyn, Bronx, Manhatta, Staten Island. 
+It only loads One project. 
+Flow: Search By borough, Find a random project, the owner and company, reach out to contribute to the project! 
+
