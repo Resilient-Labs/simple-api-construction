@@ -1,22 +1,27 @@
-# 🏗️ Project: Simple API 1 - Construction
+# Pour Day
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+Pour Day is a lightweight construction weather planner. Enter a job-site city and choose a type of outdoor work to see a five-day forecast with a **GO**, **MAYBE**, or **NO** recommendation for each day.
 
-### How to submit your code for review:
+## Demo
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Allergen Check demo](image/construction.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Work types
+
+- **Pour Concrete**: considers minimum temperature and precipitation probability.
+- **Exterior Paint**: considers minimum and maximum temperature, precipitation probability, and humidity.
+- **Roofing**: considers minimum temperature and precipitation probability.
+- **Crane Lift**: considers wind gusts and precipitation probability.
+
+Each forecast result also shows the date, daily high and low temperatures in Fahrenheit, and precipitation probability.
+
+
+## Project files
+
+- `index.html`: page structure and job-type selector.
+- `css/style.css`: page and forecast-card styles.
+- `js/main.js`: city lookup, weather request, work-status rules, and forecast rendering.
+
+## Notes
+
+Forecast recommendations are simple guidance based on the conditions returned by the weather API. They are not a substitute for site-specific safety procedures or professional judgment.
