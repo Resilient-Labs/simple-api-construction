@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Pour Day</title>
+</head>
+<body>
+    <main>
+    <p>GO / NO-GO FORECAST FOR JOB SITES</p>
+    <h1>CAN THE CREW WORK OUTSIDE THIS WEEK?</h1>
+    <p></p>
+
+    <section class="construction-wrapper">
+
+         <div>
+        <label for="site">Job Site</label>
+        <input type="text" name="site" id="city">
+         </div>
+       
+       
+
+        <label for="job-type">Select Job Type</label>
+        <select name="job-type" id="job-type">
+        <option value="pour" id="pour">Pour Concrete</option>
+        <option value="paint" id="paint">Exterior Paint</option>
+        <option value="roofing" id="roofing">Roofing</option>
+        <option value="crane-lift" id="crane">Crane Lift</option>
+        </select>
+    </section>
+    <button>CHECK FORECAST</button>
+     </main>
+
+    <!--  Result Container -->
+      <section id="card">
+        <h1>HERE IS THE DATA BELOW</h1>
+      </section>
+      
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
