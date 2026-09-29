@@ -35,3 +35,31 @@ span{
     font-size: 1.2rem;
     margin: 0 0 0 5px;
 }
+@media (max-width: 1450px){
+    body{
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 895px){
+    body{
+        font-size: 50%;
+    }
+}
+@media (max-width: 805px){
+    h3,span{
+        font-size: .5rem;
+    }
+}
+@media (max-width: 750px){
+    .results{
+        flex-direction: column;
+    }
+    .result-box{
+        width: 50%;
+    }
+}
+@media (max-width: 575px){
+    .result-box{
+        width: 75%;
+    }
+}
