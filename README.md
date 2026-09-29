@@ -1,22 +1,33 @@
 # 🏗️ Project: Simple API 1 - Construction
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+Description
 
-### How to submit your code for review:
+The Construction Measurement Converter is a simple web application designed to help users convert different measurements. Users can enter a number, select the measurement they are converting from, and choose the measurement they want to convert to.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+The application includes measurement options for length, weight, volume, and temperature.
 
-Example:
-```
+Tech Stack
+
+HTML — Creates the structure of the application, including the input fields, dropdown menus, and button.
+
+CSS — Styles the application and adds the background image.
+
+JavaScript — Handles the user's selections, performs the conversion, and displays the result.
+
+Features
+
+Enter a measurement value
+
+Select a starting measurement
+
+Select a measurement to convert to
+
+Supports multiple types of measurements
+
+Displays the converted result
+
+<img width="5215" height="3834" alt="diana-polekhina-iUfusOthmgQ-unsplash" src="https://github.com/user-attachments/assets/574cff95-2681-4738-8123-6c5eadc7540d" />
+
 I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+I feel good about my code: 2
+It took me a while to find working APIs, I ran into CORS and authentication issues.
