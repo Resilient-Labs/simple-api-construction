@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+/* clear-fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+/* .clear {
+    clear: both;
+} */
+body {
+    background: yellowgreen; 
+    font-family: "Roboto", sans-serif;
+}
+
+#mainOne {
+    border: 5px solid black; 
+    display: column; 
+    width: 50%; 
+    background: red;    
+}
+
+input {
+    border: 3px solid red;
+}
+
+.permit {
+    border: 3px solid black; 
+    padding: 15px; 
+    margin: 15px 0; 
+}
