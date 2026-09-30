@@ -1,0 +1,50 @@
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center; /* Centers content horizontally */
+  align-items:center;  
+  background: url('../images/Raber-Estimating-Services.jpg') center / cover no-repeat;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(7px);
+    font-family: "Comic Sans MS", sans-serif;
+    display:flex;
+    flex-direction:column;
+    place-items:center;
+    border:3px solid rgb(216, 231, 233);
+    border-radius:20px;
+    width:550px;
+    height:550px;
+    padding: top 3px 0px;
+    color:white;
+}
+
+h1{
+    color:rgb(211, 250, 93);
+}
+
+footer a{
+    color:rgb(128, 206, 234);
+}
+
+footer, input{
+    text-align:center;
+}
+
+footer{
+    margin-top:auto;
+}
+
+.mid{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+button{
+    background:rgb(199, 203, 82);
+    color:rgb(4, 2, 20);
+}

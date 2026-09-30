@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Estimation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Trade Cost Estimator:</h1>
+    <div class="mid">
+    <input class="zipcode" type="text" value="" maxlength="5" placeholder="Zip Code"></input><select class="trade">
+        <option value="plumbing">Plumbing</option>
+        <option value="paint">Paint</option>
+        <option value="electrical">Electrical</option>
+        <option value="hvac">HVAC</option>
+        <option value="demolition">Demolition</option>
+        <option value="kitchen-remodel">Kitchen Remodel</option>
+        <option value="flooring">Flooring</option>
+        <option value="drywall">Drywall</option>
+        <option value="fence">Fence</option>
+        <option value="bathroom-remodel">Bathroom Remodel</option>
+    </select><button>Search</button>
+    </div>
+    <h2 class="location"></h2>
+    <h3 class="description"></h3>
+    <p class="lowCost"></p>
+    <p class="averageCost"></p>
+    <p class="highCost"></p>
+    <br><br>
+    <footer>
+    Data from: <a href="https://estimationpro.ai/api">EstimationPro.ai Construction Cost API</a>
+    </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
