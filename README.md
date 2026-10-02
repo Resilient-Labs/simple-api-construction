@@ -1,22 +1,25 @@
-# 🏗️ Project: Simple API 1 - Construction
+# Vehicle Recall Diagnostic
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+A simple vehicle recall tool application built using HTML, CSS, and JavaScript.
 
-### How to submit your code for review:
+## About
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+This application allows users to search for vehicle recall information using the NHTSA API.
+## Screenshot
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+![Project Screenshot](assets/mockup.png)
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+- NHTSA API
+
+## What I Practiced
+
+- Fetching data from an API
+- Working with JSON data
+- DOM manipulation
+- Handling user input
+- Displaying API results on the page
