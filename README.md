@@ -1,22 +1,15 @@
-# 🏗️ Project: Simple API 1 - Construction
+# Job Finder
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+Type a job keyword, get the top three matching US listings with titles, apply links, and salary info.
 
-### How to submit your code for review:
+![Job Finder screenshot](screenshot.jpg)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How the code works
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+`getJob()` takes the search term, encodes it with `encodeURIComponent` so multi-word queries don't break the URL, and fetches the WorkLittle jobs API with a Bearer token. It slices the top three results and maps each one into the page: titles go into `.description`, "Apply Here" links get built from each job's `apply_url` into `.skills`, and salaries land in `.pay`.
+
+The line I'm proudest of is the salary render: `job.salary?.display ?? 'Salary not listed'`. Not every listing has pay data, and without that guard the whole render would crash on the first salary-less job. Optional chaining plus a nullish fallback, one expression, and missing data degrades gracefully instead of exploding. It's a small habit, but it's the difference between code that assumes a perfect API and code that's met a real one.
+
+The hardest part was the API's shape. Three different fields had to be mapped into three different page sections from one response, and the salary field's habit of sometimes not existing meant the render logic needed that fallback from the start.
+
+WorkLittle API, plain JavaScript. My code is on the `answer` branch.

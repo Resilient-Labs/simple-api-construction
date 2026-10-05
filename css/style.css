@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f7f5ff, #eaf7ff);
+    color: #2f2f3a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 70px 20px;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 35px;
+    letter-spacing: -2px;
+    color: #51486d;
+}
+
+
+
+#enter {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px 20px;
+
+    border: 2px solid #ddd8ee;
+    border-radius: 20px;
+
+    font-size: 1rem;
+    outline: none;
+
+    background: white;
+
+    transition: 0.3s ease;
+}
+#location {
+  width: 100%;
+    max-width: 500px;
+    padding: 16px 20px;
+
+    border: 2px solid #ddd8ee;
+    border-radius: 20px;
+
+    font-size: 1rem;
+    outline: none;
+
+    background: white;
+
+    transition: 0.3s ease;
+}
+#location:focus {
+    border-color: #9584c9;
+    box-shadow: 0 5px 20px rgba(149, 132, 201, 0.2);
+}
+
+#location::placeholder {
+    color: #aaa4b8;
+}
+#enter:focus {
+    border-color: #9584c9;
+    box-shadow: 0 5px 20px rgba(149, 132, 201, 0.2);
+}
+
+#enter::placeholder {
+    color: #aaa4b8;
+}
+
+
+
+#btn {
+    margin-top: 15px;
+
+    width: 140px;
+    height: 48px;
+
+    border: none;
+    border-radius: 18px;
+
+    background: #7365a8;
+
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+#btn:hover {
+    transform: translateY(-3px);
+    background: #625595;
+    box-shadow: 0 8px 18px rgba(98, 85, 149, 0.25);
+}
+
+#btn:active {
+    transform: translateY(0);
+}
+
+
+
+.description,
+.skills,
+.tools,
+.pay {
+    width: 100%;
+    max-width: 600px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    padding: 22px 25px;
+    margin-top: 18px;
+
+    border: 1px solid #ebe7f4;
+    border-radius: 20px;
+
+    line-height: 1.6;
+
+    box-shadow: 0 8px 25px rgba(80, 70, 120, 0.07);
+
+    transition: 0.3s ease;
+}
+
+/* Tiny whimsical movement */
+
+.description:hover,
+.skills:hover,
+.tools:hover,
+.pay:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(80, 70, 120, 0.11);
+}
+
+
+
+.description {
+    border-left: 5px solid #9c8bd4;
+}
+
+.skills {
+    border-left: 5px solid #79b8c9;
+}
+
+.tools {
+    border-left: 5px solid #e6ad70;
+}
+
+.pay {
+    border-left: 5px solid #7fc49a;
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 45px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    #enter {
+        max-width: 100%;
+    }
+
+    .description,
+    .skills,
+    .tools,
+    .pay {
+        padding: 18px;
+    }
+}
