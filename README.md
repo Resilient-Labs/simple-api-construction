@@ -1,22 +1,21 @@
-# 🏗️ Project: Simple API 1 - Construction
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+# Construction
 
-### How to submit your code for review:
+## Description
+Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Technologies
+- HTML
+- JavaScript
+- API
+
+## How It Works
+1. you put in you Occupation
+2. it reads the zip and loction
+3. 
+
+
+## Future Improvements
+- Add css
+- Add Imgs
