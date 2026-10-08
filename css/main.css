@@ -1,0 +1,54 @@
+:root{
+    /* took palette from image on coolors.com ! */
+/* CSS HSL */
+--dark-coffee: hsla(26, 74%, 11%, 1);
+--light-yellow: hsla(57, 82%, 91%, 1);
+--soft-peach: hsla(42, 79%, 81%, 1);
+--coffee-bean: hsla(33, 52%, 9%, 1);
+--dark-coffee-2: hsla(29, 74%, 12%, 1);
+
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(../img/sunrise.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+}
+h1{
+    font-size: 4rem;
+    padding: 1rem;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    height: 100rem;
+    font-size: 3rem;
+}
+
+.input-form{
+        background: var(--soft-peach);
+        height: 5rem;
+        padding: 3rem;  
+        max-width: 30rem;
+        border-radius: 2rem;
+}
+
+.results{
+    background: var(--dark-coffee);
+    color: var(--light-yellow);
+    max-height: 50rem;
+    width: 50rem; 
+    border-radius: 2rem;
+    padding: 3rem;
+
+}
+h1{
+    color: var(--coffee-bean);
+    text-align: center;
+}
