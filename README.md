@@ -3,6 +3,8 @@
 A web app that searches Seattle building permits by ZIP code using
 the City of Seattle’s public data API.
 
+<img width="430" height="267" alt="Construction API" src="https://github.com/user-attachments/assets/834c8b0e-01dd-4563-9649-03279e38ef94" />
+
 ## Features
 
 - Searches permits by Seattle ZIP code.
