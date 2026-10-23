@@ -2,6 +2,8 @@
 
 Type a job keyword, get the top three matching US listings with titles, apply links, and salary info.
 
+**Live site:** https://simple-api-construction.vercel.app
+
 ![Job Finder screenshot](screenshot.jpg)
 
 ## How the code works
