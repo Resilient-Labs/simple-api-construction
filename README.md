@@ -1,7 +1,5 @@
 # NYC DOB Stop Work Order Checker
 
-<img width="755" height="507" alt="Screenshot of the Application" src="https://github.com/user-attachments/assets/45c750a0-1a5d-4218-bca0-62ea834cae23" />
-
 ## Overview
 The NYC Department of Buildings (DOB) provides a list of sites across the five boroughs where a complaint was made regarding construction activity that has come to an abrupt halt. When a complaint is made, it typically triggers an official investigation by the DOB and may result in an official Stop Work Order. 
 
