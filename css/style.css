@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+.container{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.temperature-container,.wind-container {
+        display: flex;
+    justify-content: center;
+}
+
+body{
+    color: rgb(102, 158, 140);
+    background-color: rgb(206, 206, 135);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
