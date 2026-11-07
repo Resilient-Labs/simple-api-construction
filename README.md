@@ -4,6 +4,9 @@ A simple front-end web app for HVAC technicians and contractors. Enter a locatio
 
 ![Screenshot](./images/HVACimg.png)
 
+## Try it here
+[Live link](https://hvac-technican-quote.netlify.app/)
+
 ## Why It's Useful
 
 When an HVAC tech recommends a new system, one of the first things a customer asks is how much it will cost to run. Electricity prices vary a lot from place to place. This app looks up the actual rates for the job site, so the tech can give a real estimate instead of a guess.
