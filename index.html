@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/normalize.css"></link>
+    <link rel="stylesheet" href="assets/hvac.css"></link>
+    <title>No Sweat HVAC</title>
+</head>
+<body>      
+    <section class="parent">
+        <h1>No Sweat HVAC Services</h1>
+        <section>
+            <input type="text" class="city" placeholder="Please Enter your City"><input type="text" class="state" placeholder="Please Enter Your State Code"><button type="button" id="location">Enter Location</button>
+        </section>
+        <section>
+            <select id="customerType"><option value="">Select a customer type</option><option value="commercial">Commercial</option><option value="industrial">Industrial</option><option value="residential">Residential</option></select>
+        </section>
+        <section>
+            <input type="number" id="watts" placeholder="Enter Watts/a day"><input type="number" id="hours" placeholder="Enter Hours/a day"><button id="kWhBtn">Get Quote</button>
+            <h2>Below will be your customers quote</h2>
+                <section class="result-box">
+                    <h3>Provided by:</h3><span id="utilityCo"></span>
+                </section>
+            <section class="results">
+                <section class="result-box">
+                    <h3>Estimated usage and cost a day:</h3><span id="dailyCost"></span>
+                </section>
+                <section class="result-box">
+                    <h3>Estimated usage and cost a week:</h3><span id="weeklyCost"></span>
+                </section>
+            </section>
+            <section class="results">
+                <section class="result-box">
+                    <h3>Estimated usage and cost a month:</h3><span id="monthlyCost"></span>
+                </section>
+                <section class="result-box">
+                    <h3>Estimated usage and cost a year:</h3><span id="yearlyCost"></span>
+                </section>
+            </section>
+        </section> 
+    </section>     
+    <script src="assets/hvac.js"></script>
+</body>
+</html>
