@@ -1,22 +1,35 @@
-# 🏗️ Project: Simple API 1 - Construction
+## Roofing Product Information App
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+The Roofing Product Information App is a simple front-end web application designed to provide useful product information for people working in the construction and roofing industry. Users can select a roofing item ID from a dropdown list and view a description of the corresponding item.
 
-### How to submit your code for review:
+The application uses an external API to retrieve roofing product information and display details based on the user's selection.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Features
+Item Selection: Choose a roofing item ID from a dropdown list.
+Product Information: Retrieve and display a description of the selected roofing item.
+API Integration: Fetch roofing product information from an external API.
+Dynamic Content: Update the displayed description based on the selected item.
+Interactive Interface: Easily browse available roofing items and view their descriptions.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Tech Stack
+Frontend: HTML, CSS, JavaScript
+API: External Roofing Product API
+
+## What I Learned
+Working with external APIs to retrieve information.
+Making API requests using JavaScript.
+Processing API responses and displaying dynamic content.
+Working with dropdown menus to collect user input.
+Using event listeners to respond to user selections.
+Displaying information based on a selected ID.
+Connecting API data with frontend functionality.
+
+## Installation
+Fork and clone the repository.
+Navigate to the project directory.
+
+## Usage
+Open the index.html file in your browser.
+Select a roofing item ID from the dropdown list.
+View the description returned for the selected item.
+Choose another roofing item ID to explore additional product descriptions!
