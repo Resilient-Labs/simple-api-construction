@@ -127,143 +127,205 @@ justify-content: center;
 /* ========== Theme ========== */
 :root {
   --text: #f4f4f5;
-  --text-muted: #c7c7cc;
-  --accent: #f5a524;
-  --card-bg: rgba(20, 20, 24, 0.55);
+  --text-muted: #b9b9c0;
+  --accent: #f5a524;            /* safety-vest amber */
+  --accent-dark: #d98a0b;
+  --card-bg: rgba(20, 20, 24, 0.6);
   --card-border: rgba(255, 255, 255, 0.12);
   --radius: 12px;
-  --max-width: 720px;
+  --max-width: 760px;
 }
 
 /* ========== Page ========== */
-html {
-  font-size: 16px;
-}
-
 body {
   min-height: 100vh;
-  padding: 48px 24px;
+  padding: 64px 24px;
   color: var(--text);
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;           /* 100 is too thin to read over a photo */
+  font-weight: 300;
   line-height: 1.6;
 
-  /* Dark overlay keeps text readable on top of the image */
+  /* Dark overlay keeps text readable over the photo */
   background:
-    linear-gradient(rgba(10, 10, 12, 0.65), rgba(10, 10, 12, 0.8)),
+    linear-gradient(rgba(10, 10, 12, 0.65), rgba(10, 10, 12, 0.85)),
     url("industrial2.avif") center / cover no-repeat fixed;
 }
 
-/* ========== Heading ========== */
-h1 {
+.container {
   max-width: var(--max-width);
-  margin: 0 auto 32px;
-  text-align: center;
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  margin: 0 auto;
 }
 
-/* ========== Form controls ========== */
+/* Hides the label visually but keeps it for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ========== Hero ========== */
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ========== Search bar ========== */
+.search {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
 select,
-input {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto 32px;        /* centers it (replaces margin-left: 47%) */
-  padding: 12px 16px;
+button {
   font: inherit;
-  font-weight: 400;
-  color: var(--text);
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  font-weight: 500;
+  padding: 14px 18px;
   border-radius: var(--radius);
-  backdrop-filter: blur(6px);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 select {
+  flex: 1;
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(6px);
   cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 select option {
-  color: #111;                /* dropdown list stays readable */
+  color: #111;                  /* dropdown list stays readable */
 }
 
-select:focus,
-input:focus {
+button {
+  color: #1a1206;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+select:focus-visible,
+button:focus-visible {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(245, 165, 36, 0.3);
+  box-shadow: 0 0 0 3px rgba(245, 165, 36, 0.4);
 }
 
-/* ========== Content rows ==========
-   All ten classes shared identical rules, so they are combined here.
-   Tip: give each one a shared class in your HTML (e.g. class="con firstCon")
-   and you can replace this whole list with just ".con". */
-.firstCon,
-.secondCon,
-.thirdCon,
-.fourthCon,
-.fifthCon,
-.sixthCon,
-.seventhCon,
-.eighthCon,
-.ninthCon,
-.tenthCon {
-  max-width: var(--max-width);
-  margin: 0 auto 12px;        /* centered (replaces margin-left: 45%) */
-  padding: 20px 24px;         /* grows with content instead of fixed height */
-  font-size: 1.125rem;
+/* ========== Results heading (filled by trade.js) ========== */
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h2:empty {
+  display: none;
+}
+
+/* ========== Job cards ========== */
+.results {
+  display: grid;
+  gap: 14px;
+}
+
+.job-card {
+  padding: 20px 24px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   backdrop-filter: blur(6px);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.firstCon:hover,
-.secondCon:hover,
-.thirdCon:hover,
-.fourthCon:hover,
-.fifthCon:hover,
-.sixthCon:hover,
-.seventhCon:hover,
-.eighthCon:hover,
-.ninthCon:hover,
-.tenthCon:hover {
+.job-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(245, 165, 36, 0.5);
+  border-color: rgba(245, 165, 36, 0.6);
+  border-left-color: var(--accent);
+}
+
+/* Hide a card until trade.js puts a job title in it */
+.job-card:has(.job-title:empty) {
+  display: none;
+}
+
+.job-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.tag:empty {
+  display: none;
+}
+
+.salary {
+  color: #9be7a5;
+  background: rgba(155, 231, 165, 0.12);
+}
+
+.location::before {
+  content: "📍 ";
 }
 
 /* ========== Mobile ========== */
 @media (max-width: 780px) {
   body {
-    padding: 24px 12px;
+    padding: 32px 14px;
     background-attachment: scroll; /* fixed backgrounds lag on phones */
   }
 
-  h1 {
-    margin-bottom: 24px;
+  .search {
+    flex-direction: column;
   }
 
-  select,
-  input {
-    max-width: 100%;
+  .job-card {
+    padding: 16px 18px;
   }
 
-  .firstCon,
-  .secondCon,
-  .thirdCon,
-  .fourthCon,
-  .fifthCon,
-  .sixthCon,
-  .seventhCon,
-  .eighthCon,
-  .ninthCon,
-  .tenthCon {
-    padding: 16px;
-    font-size: 1rem;
+  .job-title {
+    font-size: 1.05rem;
   }
 }
