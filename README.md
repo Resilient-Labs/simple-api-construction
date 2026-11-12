@@ -9,6 +9,26 @@
 - The coordinates are served as a query parameter to the second API 
 - The second API serves you sunrise and sunset times. 
 
+## Tech Stack
+
+- **Front end:** HTML, CSS, JavaScript (async/await, Fetch API)
+- **APIs:** [Geocodio](https://www.geocod.io/), [Sunrise-Sunset](https://sunrise-sunset.org/api)
+- **Hosting:** [GitHub Pages / Netlify / Vercel / Render]
+
+## How to Use
+
+1. Open the [live app](https://your-link-here).
+2. Enter a city or street address.
+3. Click **Submit** to see the location's coordinates and its sunrise and sunset times.
+
+## Live App
+
+**Link:** [https://your-link-here](https://your-link-here)
+
+| Search | Daylight Results |
+| --- | --- |
+| ![Location search form](./screenshots/one.png) | ![Sunrise and sunset times](./screenshots/two.png) |
+
 ## Future improvements
 - Make CSS styling changes : change fonts
 - Parse ISO 8601 format timestamp and style
