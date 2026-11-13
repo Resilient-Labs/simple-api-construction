@@ -40,6 +40,4 @@ function getHeat(){
                 console.log(`error ${err}`)
             });
 }
-// const url = 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/lhhp_lead_certifications/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
 
-//NOTES: This api works. Now I need a geocoding API to use so I can input an address and match it to it's correct coordinates for the weatherURL to then tell me the heat index based on humidity and temperature.

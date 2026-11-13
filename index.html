@@ -15,15 +15,16 @@
 <body>
     <h1>Heat Index App</h1>
     <section class="info">
-        <p class="firstP-first">High heat combined with humidity can create dangerous conditions for outdoor workers. To prevent heat-related illnesses, you have to know what kind of conditions you're walking into first.</p>
-        <p class="firstP-second">Use this app to check the Heat Index for your zipcode and see suggestions for how best to protect yourself.</p>
-
+        <section class = "info-top">
+            <p class="firstP-first">High heat combined with humidity can create dangerous conditions for outdoor workers. To prevent heat-related illnesses, you have to know what kind of conditions you're walking into first.</p>
+            <p class="firstP-second">Use this app to check the Heat Index for your zipcode and see suggestions for how best to protect yourself.</p>
+        </section>
         <section class= 'input'>
             <input id= 'zipCode' type="text" placeholder="enter zipcode">
             <button>Submit</button>
         </section>
 
-        <section>
+        <section class="results">
             <h2>Today's heat index is: </h2>
             <h4>Classification: </h4>
         </section>
@@ -42,31 +43,27 @@
             </tr>
             <tr class = 'second'>
                 <th class = "caution">Classification: Caution</th>
-                <td>Water: Drink at least 8oz of cool water every 20 min</td>
-                <td>Gear: Loose fitting, light-colored, breathable clothing. A wide-brimmed</td>
-                <td>Monitoring: Best to acclimatize outdoor workers for 7-14days</td>
+                <td><span>Water:</span> Drink at least 8oz of cool water every 20 min</td>
+                <td><span>Gear:</span> Loose fitting, light-colored, breathable clothing. A wide-brimmed</td>
+                <td><span>Monitoring:</span> Best to acclimatize outdoor workers for 7-14days</td>
             </tr>
             <tr class = 'third'>
                 <th class = "extreme">Classification: Extreme Caution</th>
-                <td>Water: Continue to drink 8oz of water every 20min </td>
-                <td>Management: Organize regular breaks in a cooler area, either in shaded or air-conditioned areas</td>
+                <td><span>Water:</span> Continue to drink 8oz of water every 20min </td>
+                <td><span>Management:</span> Organize regular breaks in a cooler area, either in shaded or air-conditioned areas</td>
             </tr>
             <tr class= "fourth">
                 <th class= "danger">Classification: Danger</th>
-                <td>Water: Increase water intake to 24oz (4 cups) every hour</td>
-                <td>Monitoring: Limit working in the sun to less than 30 min. Make breaks mandatory with active cooling stations.</td>
+                <td><span>Water:</span> Increase water intake to 24oz (4 cups) every hour</td>
+                <td><span>Monitoring:</span> Limit working in the sun to less than 30 min. Make breaks mandatory with active cooling stations.</td>
             </tr>
             <tr class="fifth">
-                <th class="vBad">Classiication: Extreme Danger</th>
-                <td>Monitoring: Stop ALL outdoor work unlessa absolutely necessary.</td>
+                <th class="vBad">Classification: Extreme Danger</th>
+                <td><span>Monitoring:</span> Stop ALL outdoor work unlessa absolutely necessary.</td>
             </tr>
         </tbody>
-    </table>
-
-
+        </table>
     </section>
-
-    <img src="" alt="">
 
     <script type="text/javascript" src="assets/main.js"></script>
 </body>

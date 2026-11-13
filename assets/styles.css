@@ -47,17 +47,27 @@ h1{
     display: flex;
     flex-direction: column;
     border-radius: 0.8rem;
-    width: 60%;
+    width: 80%;
     margin: auto;
     background: rgba(194, 177, 163, 0.908);
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.info-top{
+    margin: 2rem auto;
+    background-color: #FAF6F0;
+    border: 1px solid #E2D5C3;
+    border-radius: 16px;
+    max-width: 80%;
+    color: #2B211B;
+    box-shadow: 0 10px 25px rgba(43, 33, 27, 0.1);
 }
 .firstP-first{
     font-family: "Roboto",Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-align: center;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding: 1.5rem;
 }
 .firstP-second{
     font-family: "Roboto",Arial, Helvetica, sans-serif;
@@ -65,7 +75,11 @@ h1{
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     color: rgba(0, 0, 0, 0.651);
+    width: 80%;
+    padding: 1.5rem;
 }
 #zipCode, button{
     font-size: 30px;
@@ -74,6 +88,17 @@ h1{
 .input{
     display: flex;
     gap: 1rem;
+    justify-content: center;
+}
+.results{
+    margin: 2rem auto;
+    background-color: #FAF6F0;
+    border: 1px solid #E2D5C3;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 80%;
+    color: #2B211B;
+    box-shadow: 0 10px 25px rgba(43, 33, 27, 0.1);
 }
 h2{
     font-family: "Caacupe One",Arial, Helvetica, sans-serif;
@@ -92,10 +117,11 @@ h4{
 .secondP-first{
     font-family: "Roboto",Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    font-weight: bold;
     text-align: left;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     color: black;
 }
 .secondP-second{
@@ -104,7 +130,9 @@ h4{
     text-align: left;
     margin-top: 1.3rem;
     margin-bottom: 1.5rem;
-    margin-left: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
 }
 tbody{
@@ -116,15 +144,24 @@ tbody{
     border-radius: 0.8rem;
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
     margin-bottom: 1.5rem;
+    padding: 2rem;
 }
 tr{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    padding: 0.6rem;
+}
+th{
+    font-size: 1.7rem;
+}
+td{
+    font-size: 1.4rem;
 }
 .heatRecs{
     font-family: "Caacupe One" Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
 }
 .none{
     color:rgb(255, 255, 5);
@@ -140,4 +177,7 @@ tr{
 }
 .vBad{
     color:rgb(111, 4, 4);
+}
+span{
+    font-weight: bold;
 }
