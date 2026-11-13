@@ -68,3 +68,5 @@ There are many resources for employers to use to ensure the safety of outdoor wo
 - [Occupational Safety and Health Administration (OSHA)](https://www.osha.gov/heat-exposure)
 - [Safe at Work California: An Employer's Guide [video]](https://www.safeatworkca.com/videos/heat-illness-prevention-an-employers-guide/)
 - [ERA-Environmental Blog Post: Health and Safety Planning Under OSHA's Heat Illness Regulations 2024](https://www.era-environmental.com/blog/osha-heat-illness-health-and-safety)
+
+## Happy Coding!
