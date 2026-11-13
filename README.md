@@ -13,21 +13,19 @@
 
 - **Front end:** HTML, CSS, JavaScript (async/await, Fetch API)
 - **APIs:** [Geocodio](https://www.geocod.io/), [Sunrise-Sunset](https://sunrise-sunset.org/api)
-- **Hosting:** [GitHub Pages / Netlify / Vercel / Render]
+- **Hosting:** GitHub Pages
 
-## How to Use
+## How to Use the Live App
 
-1. Open the [live app](https://your-link-here).
+1. Open the [live app](https://programmingkat.github.io/simple-api-construction/).
 2. Enter a city or street address.
 3. Click **Submit** to see the location's coordinates and its sunrise and sunset times.
 
-## Live App
 
-**Link:** [https://your-link-here](https://your-link-here)
-
-| Search | Daylight Results |
-| --- | --- |
-| ![Location search form](./screenshots/one.png) | ![Sunrise and sunset times](./screenshots/two.png) |
+Example of City Search:
+<img width="1251" height="539" alt="image" src="https://github.com/user-attachments/assets/1257b815-3a9c-48a3-8153-b826d221b5fe" />
+Example of Address Search:
+<img width="1254" height="542" alt="image" src="https://github.com/user-attachments/assets/5d3ecd42-6e66-4492-9228-15822053f870" />
 
 ## Future improvements
 - Make CSS styling changes : change fonts
