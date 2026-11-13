@@ -1,0 +1,183 @@
+
+/* 
+=======================
+BORDER BOX HACK
+=======================
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*
+========================
+CLEARFIX HACK
+========================
+*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+    background-image: url(photos/constructionWorkers.avif);
+    background-size: cover;
+    background-position: center center;
+}
+h1{
+    font-family: "Caacupe One", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(170, 129, 18); 
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-bottom: 1.5rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    width: 80%;
+    margin: auto;
+    background: rgba(194, 177, 163, 0.908);
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.info-top{
+    margin: 2rem auto;
+    background-color: #FAF6F0;
+    border: 1px solid #E2D5C3;
+    border-radius: 16px;
+    max-width: 80%;
+    color: #2B211B;
+    box-shadow: 0 10px 25px rgba(43, 33, 27, 0.1);
+}
+.firstP-first{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding: 1.5rem;
+}
+.firstP-second{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.651);
+    width: 80%;
+    padding: 1.5rem;
+}
+#zipCode, button{
+    font-size: 30px;
+    margin-left: 1rem;
+}
+.input{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.results{
+    margin: 2rem auto;
+    background-color: #FAF6F0;
+    border: 1px solid #E2D5C3;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 80%;
+    color: #2B211B;
+    box-shadow: 0 10px 25px rgba(43, 33, 27, 0.1);
+}
+h2{
+    font-family: "Caacupe One",Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+h4{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.secondP-first{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    color: black;
+}
+.secondP-second{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+tbody{
+    display: flex;
+    flex-direction: column; 
+    width: 70%;
+    margin: auto;
+    background: rgba(214, 214, 213, 0.908);
+    border-radius: 0.8rem;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+}
+tr{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0.6rem;
+}
+th{
+    font-size: 1.7rem;
+}
+td{
+    font-size: 1.4rem;
+}
+.heatRecs{
+    font-family: "Caacupe One" Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+.none{
+    color:rgb(255, 255, 5);
+}
+.caution{
+    color:rgb(180, 114, 16);
+}
+.extreme{
+    color:rgb(155, 94, 3);
+}
+.danger{
+    color:rgb(199, 17, 17);
+}
+.vBad{
+    color:rgb(111, 4, 4);
+}
+span{
+    font-weight: bold;
+}
